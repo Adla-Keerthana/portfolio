@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color:black;
+  height: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.navbar-brand img {
+  width: 60px; /* Adjust the width as needed */
+  height: 50px; /* Maintain aspect ratio */
+  margin-left: 50px; 
+  
+ 
+}
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav li a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color:rgba(121, 227, 130, 0.785);
+}
+
+.section {
+  margin-bottom: 40px; /* Adjust spacing between sections */
+}
+
+
+/* Add this to your CSS */
+
+.left-container {
+  margin-left: 30px;
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.resbutton {
+  margin-top: 20px; /* Adjust vertical spacing */
+}
+
+.myicon {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center icons vertically */
+}
+
+.myicon a {
+  margin-right: 20px; /* Add more gap between icons */
+}
+
+.myicon a:last-child {
+  margin-right: 0; /* Remove margin from the last icon */
+}
+
+
+
+.typing-text1 {
+  font-size: 40px;
+  color:white;
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  border-right: .15em solid white; /* Add a border */
+  animation: typing 2s steps(40, end), blink-caret .75s step-end infinite; /* Apply typing animation */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(68, 171, 239, 0.785);
+  }
+}
+
+.resbutton {
+  margin-top: 60px;
+  text-align: center; /* Center the button */
+}
+
+.resume {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: solid;
+  height: 45px;
+  width: 150px;
+  border-color: aliceblue;
+  transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.resume:hover {
+  background-color: rgba(68, 171, 239, 0.785); /* Change to the desired hover background color */
+  color: white; /* Change to the desired hover text color */
+  border-color: transparent; /* Hide border on hover */
+  transform: scale(1.05); /* Optional: Add a slight scale effect on hover */
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.myicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+  font-size: 30px;
+}
+
+.myicon a {
+  margin: 0 10px; /* Adjust margin between icons as needed */
+  transition: color 0.3s ease;
+}
+
+.myicon a:hover {
+  color: pink; /* Change to the desired hover color */
+}
+
+.circular-image {
+  margin-top: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px 10px rgba(68, 171, 239, 0.785); /* Green shadow before hover */
+  transition: box-shadow 0.3s ease, border-color transparent; /* Add transition effect */
+}
+
+.circular-image:hover {
+  border-color: transparent; /* Make border transparent on hover */
+  box-shadow: 0 0 20px 10px rgba(246, 24, 179, 0.864); /* Blue shadow after hover */
+}
+
+
+#page1,
+#page2,#page3,#page4,#page5{
+  display: flex;
+  flex-direction: column;
+}
+#page1{
+    background-color:black;
+    color:white;
+    height:auto;
+    padding: 35px 10%;
+}
+#page1 p{
+  font-size: 20px;
+}
+.main.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.col {
+	width: calc(50% - 20px);
+	margin-bottom: 20px; /* Reduced margin */
+}
+
+.col header.title {
+	font-family: helvetica;
+	color:rgba(68, 171, 239, 0.785);
+	padding: 0 0 10px 20px; /* Adjusted padding */
+}
+
+.col .contents {
+	padding: 0 20px; /* Adjusted padding */
+	border-left: 2px solid #bababa;
+}
+
+.col .contents .box {
+	position: relative;
+	padding: 10px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 10px; /* Reduced margin */
+}
+
+.col .contents .box:hover {
+	box-shadow: 0 3px 8px rgba(66, 159, 245, 0.2); /* Adjusted box shadow */
+	border: 1px solid transparent;
+  background-color: skyblue;
+}
+
+.col .contents .box::before {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	right: calc(100% + 18px);
+	top: 0;
+	background-color: #11a372;
+	border: 2px solid white;
+}
+
+.box h4 {
+	position: relative;
+	color: #11a372;
+	font-size: 14px; /* Reduced font size */
+}
+
+.box h3 {
+	font-size: 16px; /* Reduced font size */
+	padding: 5px 0; /* Adjusted padding */
+	font-family: helvetica;
+	color: #444;
+}
+
+.box p {
+	line-height: 1.1;
+	color: #666;
+	font-size: 14px; /* Reduced font size */
+}
+
+@media (max-width: 768px) {
+	.main.row .col {
+		width: 100%;
+	}
+}
+
+
+#page2{
+  background-color: black;
+  height: auto;
+  width:auto ;
+}
+.servicesText.card {
+  height: 270px;
+  cursor: pointer;
+}
+
+.servicesIcon {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+}
+.card:hover .servicesIcon {
+  color: #1310ce;
+}
+.servicesText:hover {
+  border: 1px solid ;
+}
+.servicesText.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #b7f3b5;
+}
+#page3{
+  background-color: black;
+  height:auto;
+  
+}
+#page3 h2{
+  margin-left:290px;
+
+}
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:auto;
+  }
+  
+  .project-card {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: rgba(68, 171, 239, 0.785);
+  }
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-info h3 {
+    margin-top: 0;
+    color:black;
+  }
+  
+  .project-info p {
+    color: #666;
+  }
+  
+  .project-info a {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  #page4{
+    width:auto;
+    height:auto;
+  }
+  #page4 h2{
+
+    margin-left: 290px;
+  }
+ 
+  .portfolio1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 250px;
+    }
+ 
+  .experience-card {
+    width: 300px;
+    background-color:white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-10px);
+    background-color: #6cdef4;
+  }
+  
+  .experience-info {
+    padding: 20px;
+  }
+  
+  .experience-info h3 {
+    margin-top: 0;
+    color:black;
+  }
+  
+  .experience-info p {
+    color: black;
+  }
+  
+ 
+  #page5{
+    background-color: black;
+    height:auto;
+  }
+ #page5 h2{
+  margin-left:300px;
+ }
+  .contact {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
